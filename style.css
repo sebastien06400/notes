@@ -133,7 +133,8 @@ button
 /*	border: 1px white solid;*/
 	justify-content: center;
 	margin: auto;
-	margin-bottom: 70px;
+	margin-bottom: 30px;
+	border-bottom: 5px black solid;
 }
 
 a[title="boutonmenu"]
@@ -194,14 +195,14 @@ a:link
 	justify-content: space-around;
 	align-content: space-around;
 	width: 200px;
-	height: 60px;
+	height: 130px;
 	font-size: 20px;	
 	text-align: center;
-	border: 1px black solid;
-	background-color: green;
+/*	border: 1px black solid;
+	background-color: green;*/
 	color: white;
 	font-family: "Arial";
-	margin: 10px;
+	margin: 8px;
 	font-weight: bold;
 }
 
