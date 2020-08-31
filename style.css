@@ -20,12 +20,13 @@ h1
 	display: flex;
 /*	flex-wrap : wrap;*/
 	color: black;
-	font-family: "DejaVu Sans", sans-serif;
+	font-family: "Constantia", sans-serif;
 /*	align-content: center;*/
 /*	justify-content: space-around;*/
-	font-size: 50px;
+	font-size: 60px;
 	margin:auto;
 }
+
 
 td
 {
