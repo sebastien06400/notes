@@ -63,11 +63,37 @@ button
 
 
 
+section
+{
+	margin-bottom: 150px;
+}
+
 .intitule
 {
 	font-weight: bold;
 	font-size: 26px;
 	
+}
+
+.notes
+{
+	margin: -30px 24%;
+	font-size: 17px;
+	text-align: justify;
+/*	border: 1px solid black;*/
+}
+
+
+.white
+{
+	color: lightgreen;
+	font-weight: 100;
+}
+
+.important
+{
+	color: red;
+	text-decoration: underline;
 }
 
 .rose

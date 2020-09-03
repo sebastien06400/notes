@@ -34,16 +34,32 @@
 			
 			<p class=sauts> 
 
+	
+
+
 				<span class=intitule> IMAGE :<br/></span><span class=black id="p1"><<span class=rose>img</span> <span class=vert>src</span>=<span class=jaune>"https://....jpg"</span> <span class=vert>alt</span>=<span class=jaune>"Descriptif"</span> <span class=vert>height</span>=<span class=jaune>"250px"</span>/></span>
 
 				<button onclick="copyToClipboard('#p1')">Copier</button>
-			<br/><br/>Si le navigateur ne trouve pas l'image il affichera le texte dans le <i>alt</i>.<br/><b>Width</b>.
+			<br/><br/>Si le navigateur ne trouve pas l'image il affichera le texte dans le <i>alt</i>.<br/><b>height, width<br/>px, %, ...</b>
 			</p>
 
 
 			<p class=sauts> 
 
-				<span class=intitule> DL FICHIER :<br/></span><span class=black id="p2"><<span class=rose>a</span> <span class=vert>href</span>=<span class=jaune>"fichier.zip"</span>>Télécharger le fichier<<span>/</span><span class=rose>a</span>></span>
+				<span class=intitule> LÉGENDE :<br/></span>
+				<span class=black id="p3"><<span class=rose>figcaption</span>>Légende de la figure<<span>/</span><span class=rose>figcaption</span>></span>
+
+				<button onclick="copyToClipboard('#p3')">Copier</button>
+			<br/><br/>Se place juste après la figure (ça peut être une image, du texte ou autre),<br/> puis le tout (figure+légende) est encadré par des balises <<span class=rose>figure</span>>  <<span>/</span><span class=rose>figure</span>>.
+			</p>
+
+
+			<p class=sauts> 
+
+
+
+
+				<span class=intitule> TÉLÉCHARGER FICHIER :<br/></span><span class=black id="p2"><<span class=rose>a</span> <span class=vert>href</span>=<span class=jaune>"fichier.zip"</span>>Télécharger le fichier<<span>/</span><span class=rose>a</span>></span>
 
 				<button onclick="copyToClipboard('#p2')">Copier</button>
 
@@ -56,6 +72,17 @@
 
 
 			</p>
+
+						<p class=sauts> 
+
+				<span class=intitule>Résumé :</span> 
+
+						<p class=notes>
+							Les balises en HTML servent à indiquer au navigateur (et parfois au moteur de recherche) ce à quoi correspond le texte entre les balises. Est-ce juste un texte ? Un texte à mettre en rouge ? En gras ? Une image à afficher ? Un lien ?... <br/><br/>Certaines balises seront déjà interprétées par le navigateur selon certaines règles prédéfinies incluses dans le navigateur (par exemple : afficher les liens en bleu), mais pour modifier ces règles ou définir d'autres règles générales (par exemple : afficher plutôt les liens en rose), ça se fait de préférence dans un fichier CSS. <br/><br/>Si on définit en CSS : <span class=white><i>afficher le contenu des balises img avec une hauteur 100px,</i></span> alors ça devient une règle qui va s'appliquer directement à toutes les balises img du fichier HTML (inutile de toutes les régler individuellement à la main). Puis si l'on veut ne sélectionner que certaines balises img, on ajoute une <i>class</i> au sein de la balise pour pouvoir cibler uniquement les balises img appartenant à cette classe. Par exemple je veux que certaines images s'affichent à gauche de la page et d'autres à droite. Dans les balises img j'ai juste à ajouter class="gauche" ou class="droite", puis dans le fichier CSS je définis la règle : <span class=white><i>tout ce qui est de classe "gauche" il faut l'afficher à gauche, et ce qui est de classe "droite" l'afficher à droite</i></span>. <br/><br/>Autre exemple, je veux afficher certains mots importants dans un texte en rouge souligné. Il suffit que je donne à ces mots une classe, par exemple la classe "important". Je définis cette classe dans le fichier CSS : <span class=white><i>tout ce qui est "important", le mettre en rouge et le souligner</i></span>. Puis pour attribuer cette classe "important" à ces mots ou groupes de mots, il faut que je les place entre balises (une classe se met à l'intérieur d'une balise). Si je n'ai pas de type de balise spécifique à utiliser j'utilise une balise générique (span ou div). Ici c'est pour un élément en ligne (inline) alors c'est span que j'utilise (div c'est pour un élément en bloc). Le texte que je veux écrire : "Dans ce texte ce mot est très important. Et cette phrase aussi.". <br/><br/>En HTML je l'écris ainsi :<br/><br/>
+				<span><</span>p>Dans ce texte ce <span><</span>span class="important">mot<span><</span>/span> est très important. <span><</span>span class="important">Et cette phrase aussi.<span><</span>/span><span><</span>/p>
+				<br/><br/>➔ Dans ce texte ce <span class="important">mot</span> est très important. <span class="important">Et cette phrase aussi.</span>
+
+						</p>
 
 		</section>
 				
